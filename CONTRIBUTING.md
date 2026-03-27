@@ -5,25 +5,29 @@ Thanks for your interest in contributing! Here's how to get started.
 ## Development Setup
 
 1. Fork and clone the repo:
-   ```bash
-   git clone git@github.com:your-username/arborpy.git
-   cd arborpy
-   ```
+
+```bash
+git clone git@github.com:your-username/arborpy.git
+cd arborpy
+```
 
 2. Install [uv](https://docs.astral.sh/uv/):
-   ```bash
-   curl -LsSf https://astral.sh/uv/install.sh | sh
-   ```
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 
 3. Install dependencies:
-   ```bash
-   uv sync
-   ```
+
+```bash
+uv sync
+```
 
 4. Install pre-commit hooks:
-   ```bash
-   pre-commit install
-   ```
+
+```bash
+pre-commit install
+```
 
 ## Running Tests
 
@@ -48,6 +52,32 @@ Or run everything at once:
 make check
 ```
 
+## Pull Request Process
+
+1. Create a branch from `develop`:
+
+```bash
+git checkout develop
+git pull origin develop
+git checkout -b feat/your-feature
+```
+
+2. Write your code and tests.
+
+3. Make sure all checks pass:
+
+```bash
+make check
+```
+
+4. Push and open a PR against `develop`:
+
+```bash
+git push -u origin feat/your-feature
+```
+
+5. Fill in the PR template.
+
 ## Branch Naming
 
 | Prefix | Use for |
@@ -60,26 +90,18 @@ make check
 
 ## Commit Messages
 
-Use [Conventional Commits](https://www.conventionalcommits.org/):
+We use [Conventional Commits](https://www.conventionalcommits.org/):
 
-```
-feat: add AVL tree with self-balancing insert
-fix: correct BST delete when node has two children
-docs: update README with AVL usage examples
-test: add edge case tests for empty tree operations
-```
-
-## Pull Request Process
-
-1. Create a feature branch from `develop`
-2. Write tests for your changes
-3. Ensure all checks pass (`make check`)
-4. Submit PR against `develop`
-5. Fill in the PR template
+- `feat: add AVL tree implementation`
+- `fix: correct BST delete for leaf nodes`
+- `docs: update README with new examples`
+- `test: add edge case tests for empty tree`
+- `refactor: extract rotation logic`
+- `chore: update CI configuration`
 
 ## Code Style
 
 - Type hints on all public functions and methods
 - Google-style docstrings on all public classes and methods
 - Line length limit: 88 characters
-- Ruff handles formatting and linting automatically
+- Ruff handles formatting and linting automatically via pre-commit

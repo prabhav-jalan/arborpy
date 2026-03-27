@@ -13,6 +13,12 @@ A comprehensive, typed, and well-tested Python library for tree data structures.
 pip install arborpy
 ```
 
+Or with uv:
+
+```bash
+uv add arborpy
+```
+
 ## Quick Start
 
 ```python

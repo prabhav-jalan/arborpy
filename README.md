@@ -107,22 +107,22 @@ level_order(root)   # [[1], [2, 3], [4, 5]]
 
 ## Roadmap
 
-- Binary Search Tree
-- Traversals (inorder, preorder, postorder, level-order)
-- Serialization (dict, JSON)
-- ASCII visualization
-- AVL Tree (self-balancing)
-- Min/Max Heap
-- Red-Black Tree
-- Trie (prefix tree)
-- Segment Tree
-- Fenwick Tree (Binary Indexed Tree)
-- N-ary Tree
+- [x] Binary Search Tree
+- [x] Traversals (inorder, preorder, postorder, level-order)
+- [x] Serialization (dict, JSON)
+- [x] ASCII visualization
+- [ ] AVL Tree (self-balancing)
+- [ ] Min/Max Heap
+- [ ] Red-Black Tree
+- [ ] Trie (prefix tree)
+- [ ] Segment Tree
+- [ ] Fenwick Tree (Binary Indexed Tree)
+- [ ] N-ary Tree
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/prabhav-jalan/arborpy/blob/main/CONTRIBUTING.md) for guidelines.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-MIT — see [LICENSE](https://github.com/prabhav-jalan/arborpy/blob/main/LICENSE) for details.
+MIT — see [LICENSE](LICENSE) for details.

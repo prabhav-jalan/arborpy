@@ -1,6 +1,6 @@
 [project]
 name = "arborpy"
-version = "0.1.0"
+version = "0.1.1"
 description = "A comprehensive Python library for tree data structures"
 readme = "README.md"
 license = "MIT"

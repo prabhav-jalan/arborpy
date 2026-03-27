@@ -1,8 +1,7 @@
 # ArborPy 🌳
 
 [![CI](https://github.com/prabhav-jalan/arborpy/actions/workflows/ci.yml/badge.svg)](https://github.com/prabhav-jalan/arborpy/actions/workflows/ci.yml)
-
-[![PyPI version](https://img.shields.io/pypi/v/arborpy)](https://pypi.org/project/arborpy/)
+[![PyPI version](https://badge.fury.io/py/arborpy.svg)](https://pypi.org/project/arborpy/)
 [![Python versions](https://img.shields.io/pypi/pyversions/arborpy)](https://pypi.org/project/arborpy/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -108,6 +107,7 @@ level_order(root)   # [[1], [2, 3], [4, 5]]
 
 ## Roadmap
 
+<<<<<<< HEAD
 - [x] Binary Search Tree
 - [x] Traversals (inorder, preorder, postorder, level-order)
 - [x] Serialization (dict, JSON)
@@ -122,8 +122,9 @@ level_order(root)   # [[1], [2, 3], [4, 5]]
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+See [CONTRIBUTING.md](https://github.com/prabhav-jalan/arborpy/blob/main/CONTRIBUTING.md) for guidelines.
 
 ## License
 
-MIT — see [LICENSE](LICENSE) for details.
+MIT — see [LICENSE](https://github.com/prabhav-jalan/arborpy/blob/main/LICENSE) for details.
+>>>>>>> develop

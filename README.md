@@ -127,4 +127,3 @@ See [CONTRIBUTING.md](https://github.com/prabhav-jalan/arborpy/blob/main/CONTRIB
 ## License
 
 MIT — see [LICENSE](https://github.com/prabhav-jalan/arborpy/blob/main/LICENSE) for details.
->>>>>>> develop

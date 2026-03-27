@@ -1,7 +1,7 @@
 # ArborPy 🌳
 
 [![CI](https://github.com/prabhav-jalan/arborpy/actions/workflows/ci.yml/badge.svg)](https://github.com/prabhav-jalan/arborpy/actions/workflows/ci.yml)
-[![PyPI version](https://badge.fury.io/py/arborpy.svg)](https://pypi.org/project/arborpy/)
+[![PyPI version](https://img.shields.io/pypi/v/arborpy)](https://pypi.org/project/arborpy/)
 [![Python versions](https://img.shields.io/pypi/pyversions/arborpy)](https://pypi.org/project/arborpy/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 

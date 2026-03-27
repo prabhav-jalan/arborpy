@@ -23,7 +23,6 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/prabhav-jalan/arborpy"
-Documentation = "https://arborpy.readthedocs.io"
 Repository = "https://github.com/prabhav-jalan/arborpy"
 Issues = "https://github.com/prabhav-jalan/arborpy/issues"
 Changelog = "https://github.com/prabhav-jalan/arborpy/blob/main/CHANGELOG.md"

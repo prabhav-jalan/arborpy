@@ -13,13 +13,13 @@ from arborpy.serialize import from_dict, from_json, to_dict, to_json
 from arborpy.traversals import inorder, level_order, postorder, preorder
 
 __all__ = [
-    "__version__",
     "ArborPyError",
     "BinarySearchTree",
     "DuplicateKeyError",
     "EmptyTreeError",
     "Node",
     "NodeNotFoundError",
+    "__version__",
     "from_dict",
     "from_json",
     "inorder",

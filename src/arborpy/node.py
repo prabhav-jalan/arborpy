@@ -71,3 +71,47 @@ class Node:
             False
         """
         return self.left is None and self.right is None
+
+
+class AVLNode(Node):
+    """A node in an AVL tree.
+
+    Extends the base ``Node`` with a height attribute used to calculate
+    balance factors and determine when rotations are needed.
+
+    Attributes:
+        val: The value stored in this node.
+        left: Reference to the left child node.
+        right: Reference to the right child node.
+        height: The height of this node in the tree (leaf = 0).
+
+    Example:
+        >>> node = AVLNode(10)
+        >>> node.height
+        0
+        >>> node.left = AVLNode(5)
+        >>> node.left.height
+        0
+    """
+
+    __slots__ = ("height",)
+
+    def __init__(
+        self,
+        val: Any,
+        left: AVLNode | None = None,
+        right: AVLNode | None = None,
+    ) -> None:
+        """Initialize an AVLNode.
+
+        Args:
+            val: The value to store in this node.
+            left: Optional left child.
+            right: Optional right child.
+        """
+        super().__init__(val, left, right)
+        self.height: int = 0
+
+    def __repr__(self) -> str:
+        """Return a string representation of the AVL node."""
+        return f"AVLNode({self.val!r}, height={self.height})"

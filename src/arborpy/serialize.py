@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from typing import Any
 
-from arborpy.node import Node
+from arborpy.node import AVLNode, Node
 
 
 def to_dict(root: Node | None) -> dict[str, Any] | None:
@@ -27,11 +27,17 @@ def to_dict(root: Node | None) -> dict[str, Any] | None:
     if root is None:
         return None
 
-    return {
+    result: dict[str, Any] = {
         "val": root.val,
         "left": to_dict(root.left),
         "right": to_dict(root.right),
     }
+
+    if isinstance(root, AVLNode):
+        result["type"] = "AVLNode"
+        result["height"] = root.height
+
+    return result
 
 
 def from_dict(data: dict[str, Any] | None) -> Node | None:
@@ -52,11 +58,17 @@ def from_dict(data: dict[str, Any] | None) -> Node | None:
     if data is None:
         return None
 
-    return Node(
-        val=data["val"],
-        left=from_dict(data.get("left")),
-        right=from_dict(data.get("right")),
-    )
+    if data.get("type") == "AVLNode":
+        node: Node = AVLNode(data["val"])
+        assert isinstance(node, AVLNode)
+        node.height = data.get("height", 0)
+    else:
+        node = Node(data["val"])
+
+    node.left = from_dict(data.get("left"))
+    node.right = from_dict(data.get("right"))
+
+    return node
 
 
 def to_json(root: Node | None, indent: int = 2) -> str:

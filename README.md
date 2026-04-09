@@ -77,8 +77,21 @@ print(avl.inorder()) # [10, 20, 25, 28, 30]
 print(avl.height())  # 2 — stays balanced!
 ```
 
-### Traversals
+### AVL Tree
 
+```python
+from arborpy import AVLTree
+
+avl = AVLTree()
+for val in [10, 20, 30, 25, 28]:
+    avl.insert(val)
+
+print(avl)           # Pretty-printed balanced tree
+print(avl.inorder()) # [10, 20, 25, 28, 30]
+print(avl.height())  # 2 — stays balanced!
+```
+
+### Traversals
 ```python
 from arborpy import BinarySearchTree
 
@@ -131,7 +144,7 @@ level_order(root)   # [[1], [2, 3], [4, 5]]
 - [x] Traversals (inorder, preorder, postorder, level-order)
 - [x] Serialization (dict, JSON)
 - [x] ASCII visualization
-- [ ] AVL Tree (self-balancing)
+- [x] AVL Tree (self-balancing)
 - [ ] Min/Max Heap
 - [ ] Red-Black Tree
 - [ ] Trie (prefix tree)

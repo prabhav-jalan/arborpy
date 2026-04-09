@@ -28,3 +28,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Full test suite with 77 tests
 - CI pipeline with GitHub Actions (lint, type check, test)
 - Type hints throughout (PEP 561 compatible)
+
+## [0.2.0] — 2026-04-07
+
+### Added
+- `BaseTree` abstract base class for shared tree interface
+- `AVLTree` — self-balancing AVL tree with automatic rotations
+- `AVLNode` with stored height attribute
+- AVL support in serialization (round-trip serialize/deserialize)
+- Comprehensive test suite for AVL tree (insert, delete, rotations, traversals)
+
+### Changed
+- `BinarySearchTree` now inherits from `BaseTree`
+- Updated exports in `__init__.py`

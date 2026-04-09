@@ -11,6 +11,7 @@ from arborpy.visualize import pretty_str
 
 __all__ = ["BaseTree"]
 
+
 class BaseTree(ABC):
     """Abstract base class for binary tree implementations.
 

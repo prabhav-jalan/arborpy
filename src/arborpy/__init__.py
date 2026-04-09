@@ -1,6 +1,8 @@
 """ArborPy: A comprehensive Python library for tree data structures."""
 
 from arborpy._version import __version__
+from arborpy.avl_tree import AVLTree
+from arborpy.base import BaseTree
 from arborpy.binary_tree import BinarySearchTree
 from arborpy.exceptions import (
     ArborPyError,
@@ -8,12 +10,15 @@ from arborpy.exceptions import (
     EmptyTreeError,
     NodeNotFoundError,
 )
-from arborpy.node import Node
+from arborpy.node import AVLNode, Node
 from arborpy.serialize import from_dict, from_json, to_dict, to_json
 from arborpy.traversals import inorder, level_order, postorder, preorder
 
 __all__ = [
+    "AVLNode",
+    "AVLTree",
     "ArborPyError",
+    "BaseTree",
     "BinarySearchTree",
     "DuplicateKeyError",
     "EmptyTreeError",

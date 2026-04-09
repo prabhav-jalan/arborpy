@@ -9,6 +9,7 @@ from arborpy.node import Node
 from arborpy.traversals import inorder, level_order, postorder, preorder
 from arborpy.visualize import pretty_str
 
+__all__ = ["BaseTree"]
 
 class BaseTree(ABC):
     """Abstract base class for binary tree implementations.
@@ -45,6 +46,10 @@ class BaseTree(ABC):
             True if the value is found.
         """
         return self.search(val)
+
+    def __iter__(self) -> Any:
+        """Iterate over values in sorted (inorder) order."""
+        return iter(self.inorder())
 
     def __repr__(self) -> str:
         """Return a string representation of the tree."""

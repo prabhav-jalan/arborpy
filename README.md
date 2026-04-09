@@ -92,7 +92,6 @@ print(avl.height())  # 2 — stays balanced!
 ```
 
 ### Traversals
-
 ```python
 from arborpy import BinarySearchTree
 

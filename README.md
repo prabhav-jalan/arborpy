@@ -63,6 +63,19 @@ bst.find_max()      # 8
 bst.height()        # 2
 len(bst)            # 7
 ```
+### AVL Tree
+
+```python
+from arborpy import AVLTree
+
+avl = AVLTree()
+for val in [10, 20, 30, 25, 28]:
+    avl.insert(val)
+
+print(avl)           # Pretty-printed balanced tree
+print(avl.inorder()) # [10, 20, 25, 28, 30]
+print(avl.height())  # 2 — stays balanced!
+```
 
 ### Traversals
 
